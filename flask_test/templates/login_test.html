@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        login
+    </title>
+    <style>
+    </style>
+</head>
+<body>
+    <h1>로그인</h1><br>
+    <form method="GET" action="/login">
+        <div>
+            <label for="id"> id </label>
+            <input type="text" name="id">
+        </div>
+        <div>
+            <label for="pwd"> pwd </label>
+            <input type="password" name="pwd">
+        </div>
+        <div class='button'>
+            <button type="submit">login</button>
+        </div>
+    </form>
+    <div>
+        <p>
+            {% if id == None %}
+                <h5> 아직 아무 값도 입력이 안되었습니다. </h5>
+            {% else %}
+                <h5> {{id}} 를 입력받았습니다. </h5>
+            {% endif %}
+        </p>
+    </div>
+</body>
+</html>
