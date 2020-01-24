@@ -38,4 +38,6 @@ def login(num=None):
 
 if __name__ == '__main__':
     # threaded=True 로 넘기면 multiple plot이 가능해짐
-  app.run(debug=True, threaded=True)
+    # app.run(debug=True, threaded=True
+    app.run(host="0.0.0.0", port=5000)
+
